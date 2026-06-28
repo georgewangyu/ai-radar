@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Radar user config",
+  "type": "object",
+  "required": ["platform", "language", "tone", "frequency", "delivery", "onboardingComplete"],
+  "properties": {
+    "platform": {
+      "enum": ["openclaw", "other"]
+    },
+    "language": {
+      "enum": ["en", "zh", "bilingual"]
+    },
+    "tone": {
+      "enum": ["concise", "operator", "technical"]
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "frequency": {
+      "enum": ["daily", "weekly", "on-demand"]
+    },
+    "deliveryTime": {
+      "type": "string"
+    },
+    "weeklyDay": {
+      "type": "string"
+    },
+    "delivery": {
+      "type": "object",
+      "required": ["method"],
+      "properties": {
+        "method": {
+          "enum": ["stdout", "telegram", "email"]
+        },
+        "chatId": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "onboardingComplete": {
+      "type": "boolean"
+    }
+  }
+}
+

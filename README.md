@@ -1,0 +1,149 @@
+# AI Radar
+
+Catch up to the papers that compound.
+
+AI Radar is a lightweight public catalog and digest layer for AI crash-course
+papers: today's paper pick, a searchable reading path, copyable markdown notes,
+weekly feeds, and an installable agent skill.
+
+Live site: https://airadar.snackoverflowgeorge.com
+
+It follows the same split as `georgesbooks` / `books-radar` and `GeorgeLoops` /
+`loops-radar`:
+
+- `george-ai` keeps source notes, paper imports, discovery candidates, and
+  public-ready markdown.
+- `ai-radar` keeps the public website, generated catalog data, feeds, tests,
+  and installable public skill.
+
+## Quick Start
+
+### Codex
+
+```bash
+mkdir -p ~/.codex/skills && git clone https://github.com/georgewangyu/ai-radar.git ~/.codex/skills/ai-radar
+```
+
+Or use the skill installer:
+
+```bash
+npx skills add georgewangyu/ai-radar --skill ai-radar -g
+```
+
+```text
+set up AI Radar
+```
+
+### Claude Code / Cursor / Other Agents
+
+```bash
+git clone https://github.com/georgewangyu/ai-radar.git ~/skills/ai-radar
+```
+
+```text
+Use ~/skills/ai-radar/skills/ai-radar/SKILL.md and set up AI Radar.
+```
+
+The agent walks users through:
+
+- daily, weekly, or on-demand paper recommendations
+- delivery time and timezone
+- language: English, Chinese, or bilingual
+- tone: concise, operator, or technical
+- delivery: current chat, Telegram, email, or an OpenClaw channel
+
+Settings are saved locally in `~/.ai-radar/config.json`. Delivery keys, if
+used, are saved locally in `~/.ai-radar/.env`.
+
+## Local Development
+
+```sh
+npm install
+npm run sync:papers
+npm run feed:weekly
+npm run dev -- --port 4194
+```
+
+Open `http://localhost:4194`.
+
+## Paper Data
+
+Public-ready source notes live in the sibling source repo:
+
+```text
+../george-ai/papers/<paper-id>.md
+```
+
+Sync them into the public app data with:
+
+```sh
+npm run sync:papers
+```
+
+Check source quality without rewriting generated data:
+
+```sh
+npm run validate:papers
+```
+
+The generated catalog lives in:
+
+```text
+data/papers.json
+lib/papers.ts
+```
+
+Do not edit generated paper content by hand. Edit `george-ai/papers/*.md`, then
+run:
+
+```sh
+npm run validate:papers
+npm run sync:papers
+npm run feed:weekly
+npm run --silent feed:latest
+```
+
+Feeds are written to:
+
+```text
+feeds/YYYY/MM/YYYY-MM-DD.md
+```
+
+## Try The Main Flow
+
+1. Search for a paper by title, category, tag, or summary.
+2. Filter by category, priority, or status.
+3. Open today's paper pick.
+4. Copy a paper note.
+5. Open a full paper detail page.
+6. Request a paper or reading-path improvement.
+7. Install the skill and ask for today's AI paper pick.
+
+## Verification
+
+```sh
+npm run feed:weekly
+npm run --silent feed:latest
+npm run typecheck
+npm run build
+npm run test:ui
+```
+
+## Request Intake
+
+Server-side GitHub issue creation uses:
+
+```env
+GITHUB_TOKEN=
+GITHUB_OWNER=georgewangyu
+GITHUB_REPO=audience-request-form
+GITHUB_PRIVATE_REPO=audience-private-intake
+AI_RADAR_REQUEST_ALLOWED_ORIGIN=
+```
+
+Public submissions create issues in `georgewangyu/audience-request-form`.
+Private submissions create issues in `georgewangyu/audience-private-intake`.
+AI Radar adds `ai-radar` and `source-repo:ai-radar` labels so the shared queue
+remains triageable.
+
+Keep tokens server-side. Do not prefix them with `NEXT_PUBLIC_`.

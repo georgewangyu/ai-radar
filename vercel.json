@@ -1,0 +1,27 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com/:path*",
+      "permanent": true
+    }
+  ]
+}
+

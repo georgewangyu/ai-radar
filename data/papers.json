@@ -1,0 +1,1246 @@
+[
+  {
+    "id": "llama3",
+    "title": "Llama3",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around In depth details of how Meta built Llama3 and the various configurations and hyperparameters.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: In depth details of how Meta built Llama3 and the various configurations and hyperparameters"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2407.21783",
+    "markdown": "# Llama3\n\nYear: 2024\nCategory: Applications\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "llama3.md"
+  },
+  {
+    "id": "flashattention",
+    "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Efficient training and inference",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [],
+    "summary": "FlashAttention shows how attention speed depends on memory movement, not just arithmetic, and redesigns the kernel around IO-aware tiling.",
+    "whyRead": "It is a useful reminder that AI progress often comes from systems work that changes practical cost curves.",
+    "bestFor": [
+      "inference cost analysis",
+      "model-serving engineers",
+      "systems-minded AI readers"
+    ],
+    "notes": [
+      "Pair it with later long-context and inference-optimization work."
+    ],
+    "nextStep": "Skim the IO-awareness explanation before reading benchmark tables.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2205.14135",
+    "paperUrl": "https://arxiv.org/abs/2205.14135",
+    "markdown": "# FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness\n\nYear: 2022\nCategory: Efficient training and inference\n\nWhy it matters:\nIt is a useful reminder that AI progress often comes from systems work that changes practical cost curves.\n\nBest for:\n- inference cost analysis\n- model-serving engineers\n- systems-minded AI readers\n\nNext step:\nSkim the IO-awareness explanation before reading benchmark tables.",
+    "sourcePath": "flashattention.md"
+  },
+  {
+    "id": "gpt3",
+    "title": "GPT3",
+    "authors": "Unknown",
+    "year": "2020",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around conviction to scale up GPT2/3/4.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: conviction to scale up GPT2/3/4"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2005.14165",
+    "markdown": "# GPT3\n\nYear: 2020\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "gpt3.md"
+  },
+  {
+    "id": "rlhf",
+    "title": "RLHF",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around InstructGPT->ChatGPT.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: InstructGPT->ChatGPT"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2203.02155",
+    "markdown": "# RLHF\n\nYear: 2022\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "rlhf.md"
+  },
+  {
+    "id": "transformers",
+    "title": "Transformers",
+    "authors": "Unknown",
+    "year": "2017",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around foundation, self-attention.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: foundation, self-attention"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/1706.03762",
+    "markdown": "# Transformers\n\nYear: 2017\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "transformers.md"
+  },
+  {
+    "id": "arc-prize",
+    "title": "ARC-Prize",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around Latest methods for solving ARC-AGI problems.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Latest methods for solving ARC-AGI problems"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2412.04604",
+    "markdown": "# ARC-Prize\n\nYear: 2024\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "arc-prize.md"
+  },
+  {
+    "id": "cot-chain-of-thought",
+    "title": "CoT (Chain of Thought)",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2201.11903",
+    "markdown": "# CoT (Chain of Thought)\n\nYear: 2022\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "cot-chain-of-thought.md"
+  },
+  {
+    "id": "deepseek-r1",
+    "title": "DeepSeek R1",
+    "authors": "Unknown",
+    "year": "2025",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around Building OSS o1-level reasoning model with pure RL, no SFT, no RM.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Building OSS o1-level reasoning model with pure RL, no SFT, no RM"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2501.12948v1",
+    "markdown": "# DeepSeek R1\n\nYear: 2025\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "deepseek-r1.md"
+  },
+  {
+    "id": "muzero",
+    "title": "MuZero",
+    "authors": "Unknown",
+    "year": "2019",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around RL without prior knowledge of game or rules.",
+    "whyRead": "Henry marked this as a priority paper for catching up to the AI research frontier.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: RL without prior knowledge of game or rules"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/1911.08265",
+    "markdown": "# MuZero\n\nYear: 2019\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry marked this as a priority paper for catching up to the AI research frontier.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "muzero.md"
+  },
+  {
+    "id": "retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": "Unknown",
+    "year": "2020",
+    "category": "RAG and memory",
+    "status": "candidate",
+    "priority": "core",
+    "tags": [],
+    "summary": "The classic RAG paper. It frames retrieval as a way to give generation a non-parametric memory instead of forcing every fact into model weights.",
+    "whyRead": "It is still the clean starting point for thinking about knowledge-grounded assistants, retrieval boundaries, and why product-grade AI needs data plumbing.",
+    "bestFor": [
+      "RAG builders",
+      "AI product engineers",
+      "agent memory design"
+    ],
+    "notes": [
+      "Use it as the baseline before reading newer self-reflective or agentic retrieval papers."
+    ],
+    "nextStep": "Read the method overview and map the retrieval/generation split onto one current product idea.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2005.11401",
+    "paperUrl": "https://arxiv.org/abs/2005.11401",
+    "markdown": "# Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\n\nYear: 2020\nCategory: RAG and memory\n\nWhy it matters:\nIt is still the clean starting point for thinking about knowledge-grounded assistants, retrieval boundaries, and why product-grade AI needs data plumbing.\n\nBest for:\n- RAG builders\n- AI product engineers\n- agent memory design\n\nNext step:\nRead the method overview and map the retrieval/generation split onto one current product idea.",
+    "sourcePath": "retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks.md"
+  },
+  {
+    "id": "reflexion-language-agents-with-verbal-reinforcement-learning",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Agents",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [],
+    "summary": "Reflexion gives agents a verbal self-feedback memory so failures can shape the next attempt without weight updates.",
+    "whyRead": "It is a practical lens for lightweight agent improvement: preserve the lesson, feed it back into the next run, and verify behavior changes.",
+    "bestFor": [
+      "agent loop design",
+      "workflow memory",
+      "evaluation-driven iteration"
+    ],
+    "notes": [
+      "Good companion to ReAct and later coding-agent loop papers."
+    ],
+    "nextStep": "Read the memory mechanism and write one analogous memory format for a real agent workflow.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2303.11366",
+    "paperUrl": "https://arxiv.org/abs/2303.11366",
+    "markdown": "# Reflexion: Language Agents with Verbal Reinforcement Learning\n\nYear: 2023\nCategory: Agents\n\nWhy it matters:\nIt is a practical lens for lightweight agent improvement: preserve the lesson, feed it back into the next run, and verify behavior changes.\n\nBest for:\n- agent loop design\n- workflow memory\n- evaluation-driven iteration\n\nNext step:\nRead the memory mechanism and write one analogous memory format for a real agent workflow.",
+    "sourcePath": "reflexion-language-agents-with-verbal-reinforcement-learning.md"
+  },
+  {
+    "id": "voyager-open-ended-embodied-agent-with-large-language-models",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Agents",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [],
+    "summary": "Voyager uses an LLM-driven curriculum, skill library, and iterative prompting to keep learning in an open-ended Minecraft environment.",
+    "whyRead": "It is a memorable pattern for agent products: accumulate reusable skills instead of treating every task as a blank prompt.",
+    "bestFor": [
+      "skill-library design",
+      "agent autonomy",
+      "long-horizon task loops"
+    ],
+    "notes": [
+      "Good source of vocabulary for skill acquisition and reuse."
+    ],
+    "nextStep": "Read the skill library section and compare it to GeorgeLoops or Codex skills.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2305.16291",
+    "paperUrl": "https://arxiv.org/abs/2305.16291",
+    "markdown": "# Voyager: An Open-Ended Embodied Agent with Large Language Models\n\nYear: 2023\nCategory: Agents\n\nWhy it matters:\nIt is a memorable pattern for agent products: accumulate reusable skills instead of treating every task as a blank prompt.\n\nBest for:\n- skill-library design\n- agent autonomy\n- long-horizon task loops\n\nNext step:\nRead the skill library section and compare it to GeorgeLoops or Codex skills.",
+    "sourcePath": "voyager-open-ended-embodied-agent-with-large-language-models.md"
+  },
+  {
+    "id": "constitutional-ai-harmlessness-from-ai-feedback",
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Alignment and post-training",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [],
+    "summary": "Constitutional AI replaces some human preference labeling with model-generated critique and revision guided by explicit principles.",
+    "whyRead": "It is a concrete post-training pattern: specify behavioral principles, generate critiques, and train toward better behavior.",
+    "bestFor": [
+      "alignment intuition",
+      "AI policy/product boundary design",
+      "post-training workflows"
+    ],
+    "notes": [
+      "Useful for thinking about approval gates and review rubrics, not only chatbot safety."
+    ],
+    "nextStep": "Read the critique-and-revision loop and compare it to a human review workflow.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2212.08073",
+    "paperUrl": "https://arxiv.org/abs/2212.08073",
+    "markdown": "# Constitutional AI: Harmlessness from AI Feedback\n\nYear: 2022\nCategory: Alignment and post-training\n\nWhy it matters:\nIt is a concrete post-training pattern: specify behavioral principles, generate critiques, and train toward better behavior.\n\nBest for:\n- alignment intuition\n- AI policy/product boundary design\n- post-training workflows\n\nNext step:\nRead the critique-and-revision loop and compare it to a human review workflow.",
+    "sourcePath": "constitutional-ai-harmlessness-from-ai-feedback.md"
+  },
+  {
+    "id": "deepseekv3",
+    "title": "Deepseekv3",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around Building a frontier OSS model at a fraction of the cost of everyone else.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Building a frontier OSS model at a fraction of the cost of everyone else"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf",
+    "markdown": "# Deepseekv3\n\nYear: 2024\nCategory: Applications\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "deepseekv3.md"
+  },
+  {
+    "id": "gemini1-5",
+    "title": "Gemini1.5",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around Multimodal across 10MM context window.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Multimodal across 10MM context window"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2403.05530",
+    "markdown": "# Gemini1.5\n\nYear: 2024\nCategory: Applications\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "gemini1-5.md"
+  },
+  {
+    "id": "gpt4",
+    "title": "GPT4",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around Overview of GPT4, but fairly high level.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Overview of GPT4, but fairly high level"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2303.08774",
+    "markdown": "# GPT4\n\nYear: 2023\nCategory: Applications\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "gpt4.md"
+  },
+  {
+    "id": "openhands",
+    "title": "OpenHands",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around OpenSource software development agents.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: OpenSource software development agents"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2407.16741",
+    "markdown": "# OpenHands\n\nYear: 2024\nCategory: Applications\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "openhands.md"
+  },
+  {
+    "id": "swe-agent",
+    "title": "SWE-Agent",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around OpenSource software development agents.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: OpenSource software development agents"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2405.15793",
+    "markdown": "# SWE-Agent\n\nYear: 2024\nCategory: Applications\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "swe-agent.md"
+  },
+  {
+    "id": "toolformer",
+    "title": "Toolformer",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Applications",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "applications"
+    ],
+    "summary": "Henry's source note frames this paper around LLMs to use tools.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Applications",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: LLMs to use tools"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2302.04761",
+    "markdown": "# Toolformer\n\nYear: 2023\nCategory: Applications\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Applications\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "toolformer.md"
+  },
+  {
+    "id": "mamba-linear-time-sequence-modeling-with-selective-state-spaces",
+    "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Architecture",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [],
+    "summary": "Mamba proposes a selective state-space architecture that handles long sequences with linear-time scaling rather than standard attention.",
+    "whyRead": "It is a useful counterweight to assuming every future sequence model has to be a Transformer variant.",
+    "bestFor": [
+      "architecture scanning",
+      "long-context intuition",
+      "efficient sequence modeling"
+    ],
+    "notes": [
+      "Read for the architectural bet, even if Transformers remain the practical default."
+    ],
+    "nextStep": "Skim the selectivity mechanism and benchmark claims before diving into math details.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2312.00752",
+    "paperUrl": "https://arxiv.org/abs/2312.00752",
+    "markdown": "# Mamba: Linear-Time Sequence Modeling with Selective State Spaces\n\nYear: 2023\nCategory: Architecture\n\nWhy it matters:\nIt is a useful counterweight to assuming every future sequence model has to be a Transformer variant.\n\nBest for:\n- architecture scanning\n- long-context intuition\n- efficient sequence modeling\n\nNext step:\nSkim the selectivity mechanism and benchmark claims before diving into math details.",
+    "sourcePath": "mamba-linear-time-sequence-modeling-with-selective-state-spaces.md"
+  },
+  {
+    "id": "big-bench",
+    "title": "BIG-Bench",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Benchmarks",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "benchmarks"
+    ],
+    "summary": "Henry's source note frames this paper around First broad & diverse collaborative OSS benchmark.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Benchmarks",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: First broad & diverse collaborative OSS benchmark"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2206.04615",
+    "markdown": "# BIG-Bench\n\nYear: 2022\nCategory: Benchmarks\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Benchmarks\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "big-bench.md"
+  },
+  {
+    "id": "chatbot-arena",
+    "title": "Chatbot Arena",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Benchmarks",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "benchmarks"
+    ],
+    "summary": "Henry's source note frames this paper around Live human preference Elo ratings.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Benchmarks",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Live human preference Elo ratings"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2403.04132",
+    "markdown": "# Chatbot Arena\n\nYear: 2024\nCategory: Benchmarks\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Benchmarks\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "chatbot-arena.md"
+  },
+  {
+    "id": "swe-bench",
+    "title": "SWE-Bench",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Benchmarks",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "benchmarks"
+    ],
+    "summary": "Henry's source note frames this paper around Real world software development.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Benchmarks",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Real world software development"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2310.06770",
+    "markdown": "# SWE-Bench\n\nYear: 2023\nCategory: Benchmarks\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Benchmarks\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "swe-bench.md"
+  },
+  {
+    "id": "qlora-efficient-finetuning-of-quantized-llms",
+    "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Efficient training and inference",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [],
+    "summary": "QLoRA makes finetuning large models more accessible by backpropagating through a frozen quantized model into low-rank adapters.",
+    "whyRead": "It explains why small teams could suddenly customize capable models without frontier-lab training budgets.",
+    "bestFor": [
+      "fine-tuning decisions",
+      "open-source model operators",
+      "cost-aware AI builders"
+    ],
+    "notes": [
+      "Read after LoRA if the adapter idea is still fuzzy."
+    ],
+    "nextStep": "Compare QLoRA's memory-saving pieces against a current fine-tuning stack.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2305.14314",
+    "paperUrl": "https://arxiv.org/abs/2305.14314",
+    "markdown": "# QLoRA: Efficient Finetuning of Quantized LLMs\n\nYear: 2023\nCategory: Efficient training and inference\n\nWhy it matters:\nIt explains why small teams could suddenly customize capable models without frontier-lab training budgets.\n\nBest for:\n- fine-tuning decisions\n- open-source model operators\n- cost-aware AI builders\n\nNext step:\nCompare QLoRA's memory-saving pieces against a current fine-tuning stack.",
+    "sourcePath": "qlora-efficient-finetuning-of-quantized-llms.md"
+  },
+  {
+    "id": "dpo",
+    "title": "DPO",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around No need for RL/Reward model.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: No need for RL/Reward model"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2305.18290",
+    "markdown": "# DPO\n\nYear: 2023\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "dpo.md"
+  },
+  {
+    "id": "llm-as-judge",
+    "title": "LLM-as-Judge",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around On par with human evaluations.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: On par with human evaluations"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2306.05685",
+    "markdown": "# LLM-as-Judge\n\nYear: 2023\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "llm-as-judge.md"
+  },
+  {
+    "id": "lora",
+    "title": "LoRA",
+    "authors": "Unknown",
+    "year": "2021",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around Fine tuning.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Fine tuning"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/abs/2106.09685",
+    "markdown": "# LoRA\n\nYear: 2021\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "lora.md"
+  },
+  {
+    "id": "moe",
+    "title": "MoE",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around MIxture of Experts.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: MIxture of Experts"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2401.04088",
+    "markdown": "# MoE\n\nYear: 2024\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "moe.md"
+  },
+  {
+    "id": "scaling-laws",
+    "title": "Scaling Laws",
+    "authors": "Unknown",
+    "year": "2020",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Henry's source note frames this paper around conviction to scale up GPT2/3/4.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: conviction to scale up GPT2/3/4"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2001.08361",
+    "markdown": "# Scaling Laws\n\nYear: 2020\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "scaling-laws.md"
+  },
+  {
+    "id": "training-compute-optimal-llms",
+    "title": "Training Compute-Optimal LLMs",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Foundational Modelling",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "foundational-modelling"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Foundational Modelling",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2203.15556",
+    "markdown": "# Training Compute-Optimal LLMs\n\nYear: 2022\nCategory: Foundational Modelling\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Foundational Modelling\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "training-compute-optimal-llms.md"
+  },
+  {
+    "id": "latent-diffusion",
+    "title": "Latent Diffusion",
+    "authors": "Unknown",
+    "year": "2021",
+    "category": "Non-LLM AI",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "non-llm-ai"
+    ],
+    "summary": "Henry's source note frames this paper around Text-to-Image.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Non-LLM AI",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Text-to-Image"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2112.10752",
+    "markdown": "# Latent Diffusion\n\nYear: 2021\nCategory: Non-LLM AI\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Non-LLM AI\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "latent-diffusion.md"
+  },
+  {
+    "id": "vision-transformer",
+    "title": "Vision Transformer",
+    "authors": "Unknown",
+    "year": "2021",
+    "category": "Non-LLM AI",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "non-llm-ai"
+    ],
+    "summary": "Henry's source note frames this paper around no need for CNNs.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Non-LLM AI",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: no need for CNNs"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2010.11929",
+    "markdown": "# Vision Transformer\n\nYear: 2021\nCategory: Non-LLM AI\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Non-LLM AI\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "vision-transformer.md"
+  },
+  {
+    "id": "alphazero",
+    "title": "AlphaZero",
+    "authors": "Unknown",
+    "year": "2017",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around RL without prior knowledge of game or rules.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: RL without prior knowledge of game or rules"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/1712.01815",
+    "markdown": "# AlphaZero\n\nYear: 2017\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "alphazero.md"
+  },
+  {
+    "id": "got-graph-of-thoughts",
+    "title": "GoT (Graph of Thoughts)",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2308.09687",
+    "markdown": "# GoT (Graph of Thoughts)\n\nYear: 2023\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "got-graph-of-thoughts.md"
+  },
+  {
+    "id": "let-s-verify-step-by-step",
+    "title": "Let’s Verify Step by Step",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around Process > Outcome.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Process > Outcome"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2305.20050",
+    "markdown": "# Let’s Verify Step by Step\n\nYear: 2023\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "let-s-verify-step-by-step.md"
+  },
+  {
+    "id": "meta-cot",
+    "title": "Meta CoT",
+    "authors": "Unknown",
+    "year": "2025",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2501.04682",
+    "markdown": "# Meta CoT\n\nYear: 2025\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "meta-cot.md"
+  },
+  {
+    "id": "react",
+    "title": "ReACT",
+    "authors": "Unknown",
+    "year": "2022",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around Generate reasoning traces and task-specific actions in interleaved manner.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Generate reasoning traces and task-specific actions in interleaved manner"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2210.03629",
+    "markdown": "# ReACT\n\nYear: 2022\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "react.md"
+  },
+  {
+    "id": "recursive-language-models",
+    "title": "Recursive Language Models",
+    "authors": "Unknown",
+    "year": "2026",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Henry's source note frames this paper around Simple REPL + basic tools → models emergently learn adaptive strategies without explicit prompting.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Henry note: Simple REPL + basic tools → models emergently learn adaptive strategies without explicit prompting"
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2512.24601v1",
+    "markdown": "# Recursive Language Models\n\nYear: 2026\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "recursive-language-models.md"
+  },
+  {
+    "id": "tot-tree-of-thoughts",
+    "title": "ToT (Tree of Thoughts)",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Planning/Reasoning",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "planning-reasoning"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Planning/Reasoning",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2305.10601",
+    "markdown": "# ToT (Tree of Thoughts)\n\nYear: 2023\nCategory: Planning/Reasoning\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Planning/Reasoning\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "tot-tree-of-thoughts.md"
+  },
+  {
+    "id": "self-rag-learning-to-retrieve-generate-and-critique",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "RAG and memory",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [],
+    "summary": "Self-RAG teaches a model to decide when to retrieve and to critique its own generated answer against retrieved evidence.",
+    "whyRead": "It pushes RAG from a fixed pipeline toward a control problem: when to search, what to use, and whether the answer is supported.",
+    "bestFor": [
+      "RAG quality",
+      "answer verification",
+      "agentic retrieval"
+    ],
+    "notes": [
+      "Useful bridge between retrieval systems and self-checking agent loops."
+    ],
+    "nextStep": "Read the reflection-token idea and ask where a product could expose similar control signals.",
+    "sourceName": "George AI seed addendum",
+    "sourceUrl": "https://arxiv.org/abs/2310.11511",
+    "paperUrl": "https://arxiv.org/abs/2310.11511",
+    "markdown": "# Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection\n\nYear: 2023\nCategory: RAG and memory\n\nWhy it matters:\nIt pushes RAG from a fixed pipeline toward a control problem: when to search, what to use, and whether the answer is supported.\n\nBest for:\n- RAG quality\n- answer verification\n- agentic retrieval\n\nNext step:\nRead the reflection-token idea and ask where a product could expose similar control signals.",
+    "sourcePath": "self-rag-learning-to-retrieve-generate-and-critique.md"
+  },
+  {
+    "id": "self-refine-iterative-refinement-with-self-feedback",
+    "title": "SELF-REFINE: Iterative Refinement with Self-Feedback",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Starter papers",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "starter-papers"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Starter papers",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2303.17651",
+    "markdown": "# SELF-REFINE: Iterative Refinement with Self-Feedback\n\nYear: 2023\nCategory: Starter papers\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Starter papers\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "self-refine-iterative-refinement-with-self-feedback.md"
+  },
+  {
+    "id": "agent-survey",
+    "title": "Agent Survey",
+    "authors": "Unknown",
+    "year": "2023",
+    "category": "Survey",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "survey"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Survey",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2308.11432",
+    "markdown": "# Agent Survey\n\nYear: 2023\nCategory: Survey\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Survey\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "agent-survey.md"
+  },
+  {
+    "id": "context-engineering-survey",
+    "title": "Context Engineering Survey",
+    "authors": "Unknown",
+    "year": "2025",
+    "category": "Survey",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "survey"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Survey",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/abs/2507.13334",
+    "markdown": "# Context Engineering Survey\n\nYear: 2025\nCategory: Survey\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Survey\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "context-engineering-survey.md"
+  },
+  {
+    "id": "llm-survey",
+    "title": "LLM Survey",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Survey",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "survey"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Survey",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2402.06196v2",
+    "markdown": "# LLM Survey\n\nYear: 2024\nCategory: Survey\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Survey\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "llm-survey.md"
+  },
+  {
+    "id": "prompt-engineering-survey",
+    "title": "Prompt Engineering Survey",
+    "authors": "Unknown",
+    "year": "2024",
+    "category": "Survey",
+    "status": "candidate",
+    "priority": "normal",
+    "tags": [
+      "survey"
+    ],
+    "summary": "Seeded from Henry Shi's AI Crash Course reading list.",
+    "whyRead": "Henry included this in his two-week AI research catch-up path for builders.",
+    "bestFor": [
+      "Survey",
+      "AI research catch-up",
+      "builder reading path"
+    ],
+    "notes": [
+      "Imported from Henry Shi's public AI Crash Course README."
+    ],
+    "nextStep": "Read the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourceName": "Henry Shi AI Crash Course",
+    "sourceUrl": "https://github.com/henrythe9th/AI-Crash-Course",
+    "paperUrl": "https://arxiv.org/pdf/2406.06608",
+    "markdown": "# Prompt Engineering Survey\n\nYear: 2024\nCategory: Survey\n\nWhy it matters:\nHenry included this in his two-week AI research catch-up path for builders.\n\nBest for:\n- Survey\n- AI research catch-up\n- builder reading path\n\nNext step:\nRead the abstract and skim the figures before deciding whether to take deeper notes.",
+    "sourcePath": "prompt-engineering-survey.md"
+  }
+]
