@@ -21,7 +21,72 @@
       ],
       "destination": "https://airadar.snackoverflowgeorge.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar-eight-eta.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar-eight-eta.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar-george-wangs-projects-b9ad7964.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar-george-wangs-projects-b9ad7964.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar-git-main-george-wangs-projects-b9ad7964.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-radar-git-main-george-wangs-projects-b9ad7964.vercel.app"
+        }
+      ],
+      "destination": "https://airadar.snackoverflowgeorge.com/:path*",
+      "permanent": true
     }
   ]
 }
-

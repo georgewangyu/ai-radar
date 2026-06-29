@@ -30,6 +30,8 @@ test.describe("AI Radar catalog", () => {
     await expect(page.getByLabel("Sort")).toHaveValue("radar");
     await expect(page.getByText("Crash Course Path")).toBeVisible();
     await expect(page.getByText("Install the skill")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Unlock install command" })).toBeVisible();
+    await expect(page.getByText("npx skills add georgewangyu/ai-radar")).toBeHidden();
     await expect(page.getByRole("heading", { name: "Weekly feed", level: 2 })).toBeVisible();
 
     await page.getByPlaceholder("Search papers, categories, concepts...").fill("retrieval");
@@ -93,16 +95,34 @@ test.describe("AI Radar catalog", () => {
     expect(clipboard).toContain("Why it matters:");
   });
 
-  test("setup command copies from the agent skill card", async ({ page, context }) => {
+  test("lead unlock reveals and copies the setup command", async ({ page, context }) => {
+    const payloads: Array<Record<string, unknown>> = [];
+
     await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+    await page.route("**/api/leads", async (route) => {
+      payloads.push(JSON.parse(route.request().postData() || "{}") as Record<string, unknown>);
+      await route.fulfill({
+        status: 200,
+        contentType: "application/json",
+        body: JSON.stringify({ ok: true }),
+      });
+    });
     await page.goto("/");
 
+    await page.getByLabel("Name").fill("Example User");
+    await page.getByLabel("Email").fill("person@example.com");
+    await page.getByRole("button", { name: "Unlock install command" }).click();
+    await expect(page.getByRole("link", { name: "Star the repo" })).toHaveAttribute(
+      "href",
+      "https://github.com/georgewangyu/ai-radar",
+    );
     await page.getByRole("button", { name: "Copy command" }).click();
 
     const clipboard = await page.evaluate(() => navigator.clipboard.readText());
     expect(clipboard).toBe(
       "npx skills add georgewangyu/ai-radar --skill ai-radar -g",
     );
+    expect(payloads[0]).toMatchObject({ name: "Example User", email: "person@example.com" });
   });
 
   test("request form defaults to public issue route and shows success", async ({ page }) => {
@@ -148,7 +168,7 @@ test.describe("AI Radar catalog", () => {
     }));
 
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth);
-    await expect(page.getByRole("button", { name: "Install skill" }).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: "Unlock skill" }).first()).toBeVisible();
     await expect(page.locator(".mobile-filter-bar")).toBeVisible();
     await expect(page.locator(".paper-nav")).toBeHidden();
   });
