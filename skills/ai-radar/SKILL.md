@@ -1,6 +1,14 @@
 ---
 name: ai-radar
 description: Use when selecting, recommending, or digesting AI papers from AI Radar.
+memory_tags:
+  - domain:ai
+  - workflow:paper-recommendation
+  - skill_role:researcher
+  - repo_boundary:tools
+  - inputs:paper-catalog
+  - outputs:paper-digest
+  - risk:low
 ---
 
 # AI Radar

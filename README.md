@@ -8,6 +8,8 @@ weekly feeds, and an installable agent skill.
 
 Live site: https://airadar.snackoverflowgeorge.com
 
+Design contract: [DESIGN.md](DESIGN.md)
+
 It follows the same split as `georgesbooks` / `books-radar` and `GeorgeLoops` /
 `loops-radar`:
 

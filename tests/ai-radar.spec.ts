@@ -9,6 +9,28 @@ const detailPageSample = [
   .map((id) => papers.find((paper) => paper.id === id))
   .filter((paper): paper is (typeof papers)[number] => Boolean(paper));
 
+function paperMatchesQuery(paper: (typeof papers)[number], query: string) {
+  const normalizedQuery = query.trim().toLowerCase();
+  const haystack = [
+    paper.title,
+    paper.authors,
+    paper.year,
+    paper.category,
+    paper.priority,
+    paper.status,
+    paper.summary,
+    paper.whyRead,
+    paper.bestFor.join(" "),
+    paper.notes.join(" "),
+    paper.tags.join(" "),
+    paper.markdown,
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return haystack.includes(normalizedQuery);
+}
+
 test.describe("AI Radar catalog", () => {
   test("hero open note navigates to the full paper page", async ({ page }) => {
     const todaysPaper = getTodaysPaper();
@@ -26,7 +48,7 @@ test.describe("AI Radar catalog", () => {
     await expect(page).toHaveTitle("AI Radar");
     await expect(page.getByRole("heading", { name: "AI Radar", level: 1 })).toBeVisible();
     await expect(page.getByText("Catch up to the papers that compound.")).toBeVisible();
-    await expect(page.getByText(`${papers.length} matching papers`)).toBeVisible();
+    await expect(page.getByText(`${papers.length} matching papers`, { exact: true })).toBeVisible();
     await expect(page.getByLabel("Sort")).toHaveValue("radar");
     await expect(page.getByText("Crash Course Path")).toBeVisible();
     await expect(page.getByText("Install the skill")).toBeVisible();
@@ -50,7 +72,7 @@ test.describe("AI Radar catalog", () => {
       await page.getByLabel("Category filter").selectOption("Planning/Reasoning");
     }
     await expect(page.getByText("CoT (Chain of Thought)").first()).toBeVisible();
-    await expect(page.getByText(`${reasoningCount} matching papers`)).toBeVisible();
+    await expect(page.getByText(`${reasoningCount} matching papers`, { exact: true })).toBeVisible();
 
     await page.getByRole("button", { name: "Clear filters" }).click();
     await page.getByPlaceholder("Search papers, categories, concepts...").fill("Mamba");
@@ -81,6 +103,30 @@ test.describe("AI Radar catalog", () => {
     await page.getByLabel("Sort").selectOption("newest");
     const newestFirstRow = await page.locator(".paper-row").first().textContent();
     expect(newestFirstRow).not.toBe(titleFirstRow);
+  });
+
+  test("pagination moves through papers and resets for search", async ({ page }) => {
+    const uniqueQuery =
+      papers.find((paper) => papers.filter((item) => paperMatchesQuery(item, paper.title)).length === 1)
+        ?.title || papers[0].title;
+    const uniqueQueryCount = papers.filter((paper) => paperMatchesQuery(paper, uniqueQuery)).length;
+
+    await page.goto("/");
+
+    await expect(page.getByText(`Page 1 of ${Math.ceil(papers.length / 12)}`)).toBeVisible();
+    await expect(page.getByText("showing 1-12")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Previous" })).toBeDisabled();
+    await expect(page.locator(".paper-row")).toHaveCount(12);
+
+    await page.getByRole("button", { name: "Next", exact: true }).click();
+    await expect(page.getByText("Page 2 of")).toBeVisible();
+    await expect(page.getByText("showing 13-24")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Previous", exact: true })).toBeEnabled();
+
+    await page.getByPlaceholder("Search papers, categories, concepts...").fill(uniqueQuery);
+    await expect(page.getByText(`${uniqueQueryCount} matching papers`, { exact: true })).toBeVisible();
+    await expect(page.getByText("Page 1 of")).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "Next", exact: true })).toHaveCount(0);
   });
 
   test("copy buttons write paper markdown", async ({ page, context }) => {
@@ -207,5 +253,19 @@ test.describe("Paper detail pages", () => {
 
     const clipboard = await page.evaluate(() => navigator.clipboard.readText());
     expect(clipboard).toBe(paper.markdown);
+  });
+});
+
+test.describe("AI Radar feed pages", () => {
+  test("weekly feed page renders copyable markdown and receipts", async ({ page }) => {
+    await page.goto("/feeds/2026-06-27");
+
+    await expect(page).toHaveTitle("2026-06-27 | AI Radar");
+    await expect(
+      page.getByRole("heading", { name: "AI Radar Weekly Feed - 2026-06-27", level: 1 }),
+    ).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Copyable Feed Markdown", level: 2 })).toBeVisible();
+    await expect(page.locator(".markdown-recipe code")).toContainText("## Featured Papers");
+    await expect(page.getByRole("heading", { name: "Source Receipts", level: 2 })).toBeVisible();
   });
 });

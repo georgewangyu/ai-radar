@@ -203,8 +203,9 @@ export function AiRadarApp({ papers }: Props) {
   );
   const pageCount = Math.max(1, Math.ceil(sortedPapers.length / pageSize));
   const currentPage = Math.min(page, pageCount);
-  const pageEnd = Math.min(currentPage * pageSize, sortedPapers.length);
-  const visiblePapers = sortedPapers.slice(0, pageEnd);
+  const pageStart = (currentPage - 1) * pageSize;
+  const pageEnd = Math.min(pageStart + pageSize, sortedPapers.length);
+  const visiblePapers = sortedPapers.slice(pageStart, pageEnd);
   const selectedPaper =
     papers.find((paper) => paper.id === selectedId) || sortedPapers[0] || todaysPaper;
 
@@ -472,6 +473,12 @@ export function AiRadarApp({ papers }: Props) {
             </nav>
 
             <div className="paper-list" aria-label="Papers">
+              <div className="list-meta">
+                <span>
+                  {sortedPapers.length} matching papers
+                  {sortedPapers.length > 0 ? ` / showing ${pageStart + 1}-${pageEnd}` : ""}
+                </span>
+              </div>
               {visiblePapers.map((paper) => (
                 <article
                   className={`paper-row ${selectedPaper.id === paper.id ? "selected" : ""}`}
@@ -492,11 +499,29 @@ export function AiRadarApp({ papers }: Props) {
                   </div>
                 </article>
               ))}
-              {pageEnd < sortedPapers.length && (
-                <button className="load-more" onClick={() => setPage((value) => value + 1)}>
-                  Load more papers
-                </button>
-              )}
+              {sortedPapers.length > pageSize ? (
+                <nav className="pagination" aria-label="Paper pagination">
+                  <button
+                    className="page-button"
+                    disabled={currentPage === 1}
+                    onClick={() => setPage((value) => Math.max(1, value - 1))}
+                    type="button"
+                  >
+                    Previous
+                  </button>
+                  <span className="page-status">
+                    Page {currentPage} of {pageCount}
+                  </span>
+                  <button
+                    className="page-button"
+                    disabled={currentPage === pageCount}
+                    onClick={() => setPage((value) => Math.min(pageCount, value + 1))}
+                    type="button"
+                  >
+                    Next
+                  </button>
+                </nav>
+              ) : null}
             </div>
           </div>
         </div>
