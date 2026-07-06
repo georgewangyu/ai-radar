@@ -110,16 +110,10 @@ h2 {
 }
 
 .mark {
-  display: grid;
+  display: block;
   width: 34px;
   height: 34px;
   flex: 0 0 auto;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--ink);
-  color: #fff;
-  font-family: var(--mono);
-  font-size: 13px;
 }
 
 .nav-pills {

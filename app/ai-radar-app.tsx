@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { BrandMark } from "./brand-mark";
 import type { Paper } from "@/lib/papers";
 import { categories, getTodaysPaper, priorities, statuses } from "@/lib/papers";
 
@@ -324,7 +325,7 @@ export function AiRadarApp({ papers }: Props) {
     <main className="shell">
       <header className="topbar">
         <a className="brand" href="/">
-          <span className="mark">AI</span>
+          <BrandMark />
           <span>AI Radar</span>
         </a>
         <nav className="nav-pills" aria-label="Page navigation">
