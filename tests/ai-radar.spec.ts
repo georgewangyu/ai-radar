@@ -54,7 +54,11 @@ test.describe("AI Radar catalog", () => {
     await expect(page.getByText("Install the skill")).toBeVisible();
     await expect(page.getByRole("button", { name: "Unlock install command" })).toBeVisible();
     await expect(page.getByText("npx skills add georgewangyu/ai-radar")).toBeHidden();
-    await expect(page.getByRole("heading", { name: "Weekly feed", level: 2 })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Daily Radar" }).first()).toHaveAttribute(
+      "href",
+      "/daily",
+    );
+    await expect(page.getByRole("heading", { name: "Daily radar", level: 2 })).toBeVisible();
 
     await page.getByPlaceholder("Search papers, categories, concepts...").fill("retrieval");
     await expect(
@@ -257,6 +261,19 @@ test.describe("Paper detail pages", () => {
 });
 
 test.describe("AI Radar feed pages", () => {
+  test("daily radar has a dated archive surface and library return path", async ({ page }) => {
+    await page.goto("/daily");
+
+    await expect(page).toHaveTitle("Daily Radar | AI Radar");
+    await expect(page.getByRole("heading", { name: "Daily Radar", level: 1 })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Library", exact: true })).toHaveAttribute(
+      "href",
+      "/#catalog",
+    );
+    await expect(page.getByText(/The full deduplicated candidate list/)).toBeVisible();
+    await expect(page.locator(".daily-list, .daily-empty")).toHaveCount(1);
+  });
+
   test("weekly feed page renders copyable markdown and receipts", async ({ page }) => {
     await page.goto("/feeds/2026-06-27");
 

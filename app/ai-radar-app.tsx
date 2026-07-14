@@ -329,8 +329,8 @@ export function AiRadarApp({ papers }: Props) {
           <span>AI Radar</span>
         </a>
         <nav className="nav-pills" aria-label="Page navigation">
-          <a href="#catalog">Catalog</a>
-          <a href="#feed">Feed</a>
+          <Link href="/daily">Daily Radar</Link>
+          <a href="#catalog">Library</a>
           <a href="#skill">Skill</a>
           <a href="#request">Request</a>
         </nav>
@@ -344,9 +344,8 @@ export function AiRadarApp({ papers }: Props) {
           <h1 id="page-title">AI Radar</h1>
           <p className="hero-line">Catch up to the papers that compound.</p>
           <p className="hero-copy">
-            A crash-course catalog for builders who want the minimum useful
-            path through frontier AI research, without turning paper reading
-            into a second job.
+            A daily paper radar and permanent research library for builders who
+            want to follow frontier AI without losing the foundational path.
           </p>
           <div className="creator-links-block">
             <p className="creator-links-title">Created by George from Henry Shi's AI Crash Course seed list</p>
@@ -635,14 +634,18 @@ export function AiRadarApp({ papers }: Props) {
 
       <section className="feed-panel" id="feed">
         <div>
-          <h2>Weekly feed</h2>
+          <h2>Daily radar</h2>
           <p>
-            The generated feed rotates the catalog into a small daily reading
-            plan so the skill has a stable source of truth.
+            Each dated report preserves the full deduplicated list and
+            recommends 4-5 papers for the evening research session. The Library
+            remains the permanent home for papers that earn promotion.
           </p>
+          <Link className="daily-open" href="/daily">
+            Open the dated archive
+          </Link>
         </div>
-        <pre>{`npm run sync:papers
-npm run feed:weekly
+        <pre>{`npm run sync:daily
+npm run sync:papers
 npm run --silent feed:latest`}</pre>
       </section>
 

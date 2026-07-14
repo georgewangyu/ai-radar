@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://airadar.snackoverflowgeorge.com"),
   title: "AI Radar",
   description:
-    "AI crash-course paper recommendations, searchable reading paths, weekly feeds, and an installable agent skill.",
+    "Daily AI paper discovery, a permanent research library, searchable reading paths, and an installable agent skill.",
   alternates: {
     canonical: "/",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Radar",
     description:
-      "AI crash-course paper recommendations, searchable reading paths, weekly feeds, and an installable agent skill.",
+      "Daily AI paper discovery, a permanent research library, searchable reading paths, and an installable agent skill.",
     url: "https://airadar.snackoverflowgeorge.com",
     type: "website",
   },

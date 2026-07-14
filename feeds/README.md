@@ -1,6 +1,6 @@
 # AI Radar Feeds
 
-Generated weekly feed files live under:
+Generated daily and weekly feed files live under:
 
 ```text
 feeds/YYYY/MM/YYYY-MM-DD.md
@@ -12,9 +12,15 @@ Create a new feed:
 npm run feed:weekly
 ```
 
+Sync validated public-safe daily feeds from the private source repo:
+
+```sh
+npm run validate:daily
+npm run sync:daily
+```
+
 Read the latest feed:
 
 ```sh
 npm run --silent feed:latest
 ```
-

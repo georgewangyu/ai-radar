@@ -3,8 +3,8 @@
 Catch up to the papers that compound.
 
 AI Radar is a lightweight public catalog and digest layer for AI crash-course
-papers: today's paper pick, a searchable reading path, copyable markdown notes,
-weekly feeds, and an installable agent skill.
+papers: a dated Daily Radar, today's paper pick, a searchable permanent
+library, copyable markdown notes, feeds, and an installable agent skill.
 
 Live site: https://airadar.snackoverflowgeorge.com
 
@@ -62,6 +62,7 @@ used, are saved locally in `~/.ai-radar/.env`.
 ```sh
 npm install
 npm run sync:papers
+npm run sync:daily
 npm run feed:weekly
 npm run dev -- --port 4194
 ```
@@ -105,6 +106,21 @@ npm run feed:weekly
 npm run --silent feed:latest
 ```
 
+## Daily Radar Data
+
+Private discovery reports live only in `../george-ai/daily-radar/`. Sanitized
+daily feed sources live in `../george-ai/public-feeds/` and sync into the public
+dated archive with:
+
+```sh
+npm run validate:daily
+npm run sync:daily
+```
+
+The public app never syncs private interest evidence or research notes. Daily
+feeds may link directly to new papers before those papers graduate into the
+permanent Library.
+
 Feeds are written to:
 
 ```text
@@ -126,6 +142,7 @@ feeds/YYYY/MM/YYYY-MM-DD.md
 ```sh
 npm run feed:weekly
 npm run --silent feed:latest
+npm run validate:daily
 npm run typecheck
 npm run build
 npm run test:ui

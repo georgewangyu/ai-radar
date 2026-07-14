@@ -10,6 +10,8 @@
     "start": "next start",
     "sync:papers": "node scripts/sync-george-ai.mjs",
     "sync:george-ai": "node scripts/sync-george-ai.mjs",
+    "sync:daily": "node scripts/sync-daily-feeds.mjs",
+    "validate:daily": "node scripts/sync-daily-feeds.mjs --check",
     "validate:papers": "node scripts/sync-george-ai.mjs --check",
     "typecheck": "tsc --noEmit",
     "test:ui": "playwright test"
@@ -31,4 +33,3 @@
     "postcss": "^8.5.10"
   }
 }
-

@@ -1,36 +1,12 @@
-import { existsSync, readdirSync, readFileSync } from "fs";
-import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { allFeeds } from "@/lib/feeds";
 
 type Props = {
   params: Promise<{ id: string }>;
 };
 
-const feedsRoot = path.join(process.cwd(), "feeds");
-
-function feedPaths() {
-  if (!existsSync(feedsRoot)) return [];
-
-  return readdirSync(feedsRoot, { recursive: true, encoding: "utf8" })
-    .filter((entry): entry is string => /^\d{4}\/\d{2}\/\d{4}-\d{2}-\d{2}\.md$/.test(entry))
-    .map((entry) => path.join(feedsRoot, entry))
-    .sort();
-}
-
-function readFeed(filePath: string) {
-  const markdown = readFileSync(filePath, "utf8");
-  const id = path.basename(filePath, ".md");
-  const title = markdown.match(/^# (.+)$/m)?.[1]?.trim() || `AI Radar Feed - ${id}`;
-  const summary = markdown.match(/## Summary\s+([\s\S]*?)(?=\n## |$)/)?.[1]?.trim() || "";
-  const receipts = Array.from(
-    new Set([...markdown.matchAll(/https?:\/\/[^\s)]+/g)].map((match) => match[0])),
-  );
-
-  return { id, markdown, receipts, summary, title };
-}
-
-const feeds = feedPaths().map(readFeed).sort((left, right) => right.id.localeCompare(left.id));
+const feeds = allFeeds();
 
 export function generateStaticParams() {
   return feeds.map((feed) => ({ id: feed.id }));
@@ -44,7 +20,7 @@ export async function generateMetadata({ params }: Props) {
 
   return {
     title: `${feed.id} | AI Radar`,
-    description: feed.summary.replace(/\s+/g, " ").slice(0, 160),
+    description: feed.summaryText.slice(0, 160),
   };
 }
 
@@ -57,8 +33,8 @@ export default async function FeedPage({ params }: Props) {
   return (
     <main className="shell">
       <article className="paper-page">
-        <Link className="back-link" href="/">
-          Back to AI Radar
+        <Link className="back-link" href={feed.type === "daily" ? "/daily" : "/"}>
+          Back to {feed.type === "daily" ? "Daily Radar" : "AI Radar"}
         </Link>
         <h1>{feed.title}</h1>
         {feed.summary && <p className="hero-copy">{feed.summary}</p>}

@@ -130,7 +130,9 @@ h2 {
   font-weight: 760;
 }
 
-.nav-pills a:hover {
+.nav-pills a:hover,
+.nav-pills a.active,
+.nav-pills a[aria-current="page"] {
   background: var(--surface);
   color: var(--ink);
 }
@@ -172,10 +174,107 @@ h2 {
 .feed-panel,
 .request-section,
 .radar-grid > div,
-.paper-page {
+.paper-page,
+.daily-page {
   border: 1px solid rgba(23, 23, 23, 0.13);
   background: var(--paper);
   box-shadow: var(--shadow);
+}
+
+.daily-page {
+  margin-top: 18px;
+  border-radius: 22px;
+  padding: 38px;
+}
+
+.daily-intro {
+  max-width: 760px;
+  padding-bottom: 32px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.daily-intro p {
+  max-width: 680px;
+  color: #4c524a;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.daily-list {
+  border-top: 1px solid var(--line);
+}
+
+.daily-entry {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 34px;
+  border-bottom: 1px solid var(--line);
+  padding: 30px 0;
+}
+
+.daily-entry-date {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.daily-entry-date span {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.daily-entry-date small {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.daily-entry h2 {
+  margin-bottom: 10px;
+  font-size: clamp(25px, 3vw, 36px);
+}
+
+.daily-entry > div:last-child > p,
+.daily-empty p {
+  color: #50564c;
+  line-height: 1.55;
+}
+
+.daily-recommendations {
+  display: grid;
+  gap: 9px;
+  margin: 18px 0;
+  padding-left: 21px;
+}
+
+.daily-recommendations a {
+  color: var(--accent-dark);
+  font-weight: 760;
+}
+
+.daily-open,
+.daily-empty a {
+  display: inline-flex;
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.daily-empty {
+  border-top: 1px solid var(--line);
+  padding-top: 30px;
 }
 
 .hero {
@@ -964,7 +1063,8 @@ fieldset input {
   .agent-setup,
   .feed-panel,
   .request-section,
-  .paper-page {
+  .paper-page,
+  .daily-page {
     padding: 20px;
   }
 
@@ -1005,6 +1105,11 @@ fieldset input {
 
   .paper-row {
     grid-template-columns: 1fr;
+  }
+
+  .daily-entry {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .row-actions {
