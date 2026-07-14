@@ -3,7 +3,7 @@
 Generated daily and weekly feed files live under:
 
 ```text
-feeds/YYYY/MM/YYYY-MM-DD.md
+feeds/YYYY/MM/YYYY-MM-DD-ai-paper-radar.md
 ```
 
 Create a new feed:

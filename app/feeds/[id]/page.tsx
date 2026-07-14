@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { allFeeds } from "@/lib/feeds";
+import { allFeeds, feedById } from "@/lib/feeds";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -14,19 +14,19 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
-  const feed = feeds.find((item) => item.id === id);
+  const feed = feedById(id);
 
   if (!feed) return { title: "Feed not found | AI Radar" };
 
   return {
-    title: `${feed.id} | AI Radar`,
+    title: `${feed.date} | AI Radar`,
     description: feed.summaryText.slice(0, 160),
   };
 }
 
 export default async function FeedPage({ params }: Props) {
   const { id } = await params;
-  const feed = feeds.find((item) => item.id === id);
+  const feed = feedById(id);
 
   if (!feed) notFound();
 

@@ -272,6 +272,19 @@ test.describe("AI Radar feed pages", () => {
     );
     await expect(page.getByText(/The full deduplicated candidate list/)).toBeVisible();
     await expect(page.locator(".daily-list, .daily-empty")).toHaveCount(1);
+    await expect(page.getByRole("link", { name: "Open full candidate list" })).toHaveAttribute(
+      "href",
+      "/feeds/2026-07-13-ai-paper-radar",
+    );
+  });
+
+  test("legacy bare-date daily feed route resolves to the named radar", async ({ page }) => {
+    await page.goto("/feeds/2026-07-13");
+
+    await expect(page).toHaveTitle("2026-07-13 | AI Radar");
+    await expect(
+      page.getByRole("heading", { name: "AI Radar Daily Feed - 2026-07-13", level: 1 }),
+    ).toBeVisible();
   });
 
   test("weekly feed page renders copyable markdown and receipts", async ({ page }) => {

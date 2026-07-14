@@ -46,7 +46,7 @@ export default function DailyRadarPage() {
             {feeds.map((feed) => (
               <article className="daily-entry" key={feed.id}>
                 <div className="daily-entry-date">
-                  <span>{feed.id}</span>
+                  <span>{feed.date}</span>
                   <small>{feed.recommendations.length} recommended</small>
                 </div>
                 <div>

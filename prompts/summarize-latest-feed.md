@@ -6,7 +6,7 @@ Read the latest AI Radar weekly feed and produce a compact recommendation.
 
 - User language: English, Chinese, or bilingual.
 - User tone: concise, operator, or technical.
-- Feed markdown from `feeds/YYYY/MM/YYYY-MM-DD.md`.
+- Feed markdown from `feeds/YYYY/MM/YYYY-MM-DD-ai-paper-radar.md`.
 
 ## Output
 
@@ -41,4 +41,3 @@ This week's AI Radar:
 - Separate paper claims from George's reading recommendation.
 - Prefer one concrete action over broad study advice.
 - Keep source links attached.
-

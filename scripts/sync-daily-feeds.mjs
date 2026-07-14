@@ -33,7 +33,10 @@ async function collectMarkdownFiles(dir) {
 
     if (entry.isDirectory()) {
       files.push(...(await collectMarkdownFiles(fullPath)));
-    } else if (entry.isFile() && /^\d{4}-\d{2}-\d{2}\.md$/.test(entry.name)) {
+    } else if (
+      entry.isFile() &&
+      /^\d{4}-\d{2}-\d{2}-ai-paper-radar\.md$/.test(entry.name)
+    ) {
       files.push(fullPath);
     }
   }

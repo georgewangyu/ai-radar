@@ -124,7 +124,7 @@ permanent Library.
 Feeds are written to:
 
 ```text
-feeds/YYYY/MM/YYYY-MM-DD.md
+feeds/YYYY/MM/YYYY-MM-DD-ai-paper-radar.md
 ```
 
 ## Try The Main Flow

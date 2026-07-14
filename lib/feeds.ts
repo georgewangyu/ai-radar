@@ -11,6 +11,7 @@ export type FeedRecommendation = {
 };
 
 export type RadarFeed = {
+  date: string;
   id: string;
   markdown: string;
   receipts: string[];
@@ -35,7 +36,10 @@ function feedPaths() {
   if (!existsSync(feedsRoot)) return [];
 
   return readdirSync(feedsRoot, { recursive: true, encoding: "utf8" })
-    .filter((entry): entry is string => /^\d{4}\/\d{2}\/\d{4}-\d{2}-\d{2}\.md$/.test(entry))
+    .filter(
+      (entry): entry is string =>
+        /^\d{4}\/\d{2}\/\d{4}-\d{2}-\d{2}(?:-[a-z0-9-]+)?\.md$/.test(entry),
+    )
     .map((entry) => path.join(feedsRoot, entry))
     .sort();
 }
@@ -43,6 +47,7 @@ function feedPaths() {
 function readFeed(filePath: string): RadarFeed {
   const markdown = readFileSync(filePath, "utf8");
   const id = path.basename(filePath, ".md");
+  const date = id.slice(0, 10);
   const title = markdown.match(/^# (.+)$/m)?.[1]?.trim() || `AI Radar Feed - ${id}`;
   const summary = section(markdown, "Summary");
   const summaryText = summary
@@ -64,7 +69,7 @@ function readFeed(filePath: string): RadarFeed {
     new Set([...markdown.matchAll(/https?:\/\/[^\s)]+/g)].map((match) => match[0])),
   );
 
-  return { id, markdown, receipts, recommendations, summary, summaryText, title, type };
+  return { date, id, markdown, receipts, recommendations, summary, summaryText, title, type };
 }
 
 export function allFeeds() {
@@ -73,4 +78,12 @@ export function allFeeds() {
 
 export function dailyFeeds() {
   return allFeeds().filter((feed) => feed.type === "daily");
+}
+
+export function feedById(id: string) {
+  const feeds = allFeeds();
+  return (
+    feeds.find((feed) => feed.id === id) ||
+    feeds.find((feed) => feed.type === "daily" && feed.date === id)
+  );
 }
