@@ -7,13 +7,19 @@ Public-safe daily paper discovery from AI Radar.
 
 ## Summary
 
-- Candidate count after deduplication: 69.
+- Candidate count after deduplication: 70.
 - Recommended tonight: 5.
-- Sources checked: arXiv, Hugging Face Daily Papers, DAIR.AI Papers of the Week, Henry Shi's AI Crash Course, OpenReview, and targeted project repositories.
+- Sources checked: arXiv, Hugging Face Daily Papers, DAIR.AI Papers of the Week, Henry Shi's AI Crash Course, OpenReview, targeted project repositories, and one reader-supplied Oak Lab item.
 - Source note: OpenReview required browser verification during this run, so no OpenReview-only candidate was included.
 
 ## Recommended Tonight
 
+- [The OaK Architecture: A Vision of SuperIntelligence from Experience](https://oaklab.ai/posts/the-oak-architecture)
+  - Tags: continual learning, reinforcement learning, planning, world models.
+  - What the source claims: continually learning agents should meta-learn how their parameters change and build reusable abstractions through Feature Construction, SubTask, Option, Model, and Planning.
+  - Why builders should inspect it: it frames an agent as a persistent learning process rather than a frozen model wrapped in tools and memory.
+  - Source boundary: this is an invited keynote and active research program, not a peer-reviewed paper or a completed end-to-end system.
+  - First reading action: read Oak Lab's [credit-assignment post](https://oaklab.ai/posts/learning-from-experience-instead-of-curated-datasets), then draw the five FC-STOMP stages while watching the keynote.
 - [Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming](https://arxiv.org/abs/2607.11698)
   - Tags: agents, evaluation, security, red-teaming.
   - What the paper claims: a falsifiable discovery loop can accumulate reusable vulnerability concepts for production agents and transfer them across tested scenarios and attack channels.
@@ -34,13 +40,11 @@ Public-safe daily paper discovery from AI Radar.
   - What the paper claims: the field can be organized around methods and benchmarks for measuring, eliciting, improving, and applying LLM metacognition.
   - Why builders should inspect it: it supplies a research map for confidence, self-monitoring, critique, and escalation.
   - First reading action: extract the taxonomy and choose one measurable construct for an experiment.
-- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
-  - Tags: agents, reasoning, tool use, foundation.
-  - What the paper claims: interleaving reasoning traces with actions lets models update their plans from environmental observations.
-  - Why builders should inspect it: it provides the foundational action-observation vocabulary assumed by many current agent papers.
-  - First reading action: label thought, action, observation, state update, and recovery in one example trajectory.
-
 ## Full Candidate List
+
+### Reader-selected addition
+
+- [The OaK Architecture](https://oaklab.ai/posts/the-oak-architecture) - continual learning, online meta-learning, temporal abstraction, and model-based planning; invited keynote/research program rather than a peer-reviewed paper.
 
 ### Fresh arXiv query set
 
@@ -135,3 +139,6 @@ Public-safe daily paper discovery from AI Radar.
 - https://github.com/deeplearning-wisc/mace
 - https://github.com/yale-nlp/LLM-Metacognition
 - https://react-lm.github.io/
+- https://oaklab.ai/posts/the-oak-architecture
+- https://oaklab.ai/posts/learning-from-experience-instead-of-curated-datasets
+- https://www.reddit.com/r/singularity/s/j2a1Ui2ZhK

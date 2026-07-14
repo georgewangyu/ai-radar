@@ -28,6 +28,42 @@
     "sourcePath": "llama3.md"
   },
   {
+    "id": "oak-architecture",
+    "title": "The OaK Architecture: A Vision of SuperIntelligence from Experience",
+    "authors": "Richard S. Sutton",
+    "year": "2025",
+    "category": "Continual Learning / Reinforcement Learning",
+    "status": "selected",
+    "priority": "core",
+    "tags": [
+      "agents",
+      "continual-learning",
+      "reinforcement-learning",
+      "planning",
+      "world-models",
+      "temporal-abstraction"
+    ],
+    "summary": "OaK is Sutton's proposed model-based reinforcement-learning architecture for agents that learn continually from their own experience. Its components learn online, its parameter step sizes are meta-learned, and it creates state and time abstractions through the FC-STOMP progression: Feature Construction, SubTask, Option, Model, and Planning.\n\nThis is an invited keynote and research program rather than a conventional peer-reviewed paper. Oak Lab's companion technical post demonstrates one piece of the motivation: adaptive credit assignment can isolate predictable signal in noisy online streams where the shown SGD baseline absorbs noise. The full OaK architecture remains a proposed system, not a validated end-to-end result.",
+    "whyRead": "It offers a deeper model of agents than “LLM plus tools”: intelligence as a persistent process that discovers concepts, turns them into reusable skills, learns models of those skills, and plans with them. It also creates a technical reading path through continual learning, options, world models, meta-learning, and online credit assignment.",
+    "bestFor": [
+      "Understanding experience-grounded alternatives to static pretrained models",
+      "Building a research map for continual and model-based reinforcement learning",
+      "Evaluating whether an agent is actually accumulating reusable skills"
+    ],
+    "notes": [
+      "Source type: RLC 2025 keynote / architecture proposal, not a peer-reviewed paper.",
+      "Key mechanism: FC-STOMP builds a ladder from learned features to planning.",
+      "Oak Lab's 20-watt, trillion-parameter agent is an explicit “holy grail,” not a current result.",
+      "Technical companion: https://oaklab.ai/posts/learning-from-experience-instead-of-curated-datasets"
+    ],
+    "nextStep": "Read Oak Lab's noisy-stream credit-assignment post, then watch the keynote and draw the FC-STOMP loop before judging the larger superintelligence claim.",
+    "sourceName": "George-selected Oak Lab launch",
+    "sourceUrl": "https://www.reddit.com/r/singularity/s/j2a1Ui2ZhK",
+    "paperUrl": "https://oaklab.ai/posts/the-oak-architecture",
+    "markdown": "# The OaK Architecture: A Vision of SuperIntelligence from Experience\n\nYear: 2025\nCategory: Continual Learning / Reinforcement Learning\n\nWhy it matters:\nSutton proposes an agent architecture that learns continually from experience,\nconstructs reusable temporal abstractions, and plans with learned option models.\n\nBest for:\n- continual-learning research maps\n- model-based reinforcement learning\n- thinking beyond static LLM agents\n\nNext step:\nRead Oak Lab's credit-assignment post, then map the five FC-STOMP stages while\nwatching the keynote.",
+    "sourcePath": "oak-architecture.md"
+  },
+  {
     "id": "flashattention",
     "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
     "authors": "Unknown",
