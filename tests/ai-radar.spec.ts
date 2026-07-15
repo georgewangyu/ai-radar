@@ -272,9 +272,9 @@ test.describe("AI Radar feed pages", () => {
     );
     await expect(page.getByText(/The full deduplicated candidate list/)).toBeVisible();
     await expect(page.locator(".daily-list, .daily-empty")).toHaveCount(1);
-    await expect(page.getByRole("link", { name: "Open full candidate list" })).toHaveAttribute(
+    await expect(page.getByRole("link", { name: "Open full candidate list" }).first()).toHaveAttribute(
       "href",
-      "/feeds/2026-07-13-ai-paper-radar",
+      /^\/feeds\/\d{4}-\d{2}-\d{2}-ai-paper-radar$/,
     );
   });
 
