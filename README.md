@@ -143,10 +143,15 @@ feeds/YYYY/MM/YYYY-MM-DD-ai-paper-radar.md
 npm run feed:weekly
 npm run --silent feed:latest
 npm run validate:daily
-npm run typecheck
+npm run check   # typecheck and lint
 npm run build
 npm run test:ui
 ```
+
+CI (`.github/workflows/ci.yml`) runs `npm run check` and `npm run build` on
+every push to `main` and on pull requests. `validate:daily` and
+`validate:papers` are not in CI because they read the sibling `../george-ai`
+repo.
 
 ## Website Lead Capture
 

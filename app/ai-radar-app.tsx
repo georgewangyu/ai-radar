@@ -324,10 +324,10 @@ export function AiRadarApp({ papers }: Props) {
   return (
     <main className="shell">
       <header className="topbar">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           <BrandMark />
           <span>AI Radar</span>
-        </a>
+        </Link>
         <nav className="nav-pills" aria-label="Page navigation">
           <Link href="/daily">Daily Radar</Link>
           <a href="#catalog">Library</a>
@@ -348,7 +348,7 @@ export function AiRadarApp({ papers }: Props) {
             want to follow frontier AI without losing the foundational path.
           </p>
           <div className="creator-links-block">
-            <p className="creator-links-title">Created by George from Henry Shi's AI Crash Course seed list</p>
+            <p className="creator-links-title">Created by George from Henry Shi&apos;s AI Crash Course seed list</p>
             <nav className="creator-links" aria-label="George links">
               {creatorLinks.map(([label, href]) => (
                 <a href={href} key={label}>
@@ -359,7 +359,7 @@ export function AiRadarApp({ papers }: Props) {
           </div>
         </div>
         <aside className="hero-note" id="today">
-          <span>Today's paper</span>
+          <span>Today&apos;s paper</span>
           <strong>{todaysPaper.title}</strong>
           <p>{todaysPaper.summary}</p>
           <Link href={`/papers/${todaysPaper.id}`}>Open note</Link>
@@ -584,12 +584,12 @@ export function AiRadarApp({ papers }: Props) {
             <strong>AI Crash Course</strong>
             <p>Survey papers / foundational modeling / reasoning / agents / benchmarks</p>
           </div>
-          <h2>Seeded from a builder's reading list</h2>
+          <h2>Seeded from a builder&apos;s reading list</h2>
           <p>
-            Henry Shi's AI Crash Course is the starting map. AI Radar turns that
+            Henry Shi&apos;s AI Crash Course is the starting map. AI Radar turns that
             list into a searchable catalog, weekly feed, and installable skill.
           </p>
-          <a href="https://github.com/henrythe9th/AI-Crash-Course">View Henry's source</a>
+          <a href="https://github.com/henrythe9th/AI-Crash-Course">View Henry&apos;s source</a>
         </div>
       </section>
 
@@ -598,7 +598,7 @@ export function AiRadarApp({ papers }: Props) {
           <h2>Install the skill</h2>
           <p>
             Add AI Radar to Codex, Claude Code, Cursor, or another agent. Ask for
-            today's paper, a weekly digest, or a topic-specific path.
+            today&apos;s paper, a weekly digest, or a topic-specific path.
           </p>
         </div>
         {leadUnlocked ? (
