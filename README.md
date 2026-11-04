@@ -143,7 +143,7 @@ feeds/YYYY/MM/YYYY-MM-DD-ai-paper-radar.md
 npm run feed:weekly
 npm run --silent feed:latest
 npm run validate:daily
-npm run check   # typecheck and lint
+npm run check   # typecheck, lint and unit tests
 npm run build
 npm run test:ui
 ```
